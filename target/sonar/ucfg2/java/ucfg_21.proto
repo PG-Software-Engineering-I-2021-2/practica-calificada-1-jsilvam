@@ -1,25 +1,0 @@
-
-=app.Oferta#enTemporada(Ljava/lang/String;)Ljava/lang/Boolean;^
-TD:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/Oferta.java ("1*ÿ
-1^
-TD:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/Oferta.java (¥
-¢
-^
-TD:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/Oferta.java (
-%0java.util.logging.Logger"__id**
-
-app.Oferta"
-logger‡„
-^
-TD:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/Oferta.java (8
-
-%1void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
-
-%0java.util.logging.Logger*&$
-"La oferta si estÃ¡ en temporada...2info(Ljava/lang/String;)"h
-^
-TD:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/Oferta.java (
-"":
-fechaActualjava.lang.StringB
-
-app.Oferta

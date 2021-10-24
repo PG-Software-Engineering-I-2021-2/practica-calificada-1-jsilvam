@@ -1,8 +1,6 @@
 package app;
 
 import java.util.Map;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 
 public class AgenteVirtual {
@@ -38,7 +36,6 @@ public class AgenteVirtual {
     }
 
     public boolean ofertaEnTemporada(Integer idOferta){
-        //String fechaActual = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
         String fechaActual = "23-10-2021";
         return ofertas.get(idOferta).enTemporada(fechaActual);        
     }
@@ -56,6 +53,15 @@ public class AgenteVirtual {
 
     public void removerLibro(Integer idLibro, Integer cantidad){
         libros.get(idLibro).removerCantidad(cantidad);
+    }
+
+    public boolean agregarLibro(Integer idLibro, Integer idOferta, Integer cantidad){
+        libros.get(idLibro).addCantidad(cantidad);
+        var estudiantesOferta = ofertasEstudiante.get(idOferta);
+        for (Map.Entry<Integer, Boolean> entry : estudiantesOferta.entrySet()) {
+            if(Boolean.TRUE.equals(entry.getValue())) estudiantes.get(entry.getKey()).notificar();
+        }
+        return true;
     }
 
 

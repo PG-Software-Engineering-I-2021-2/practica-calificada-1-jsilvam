@@ -29,8 +29,9 @@ public class AgenteVirtualTest {
 
         agenteVirtual.registrarEstudiante(2, "jsilva@utec.edu.pe", 990464187);
         Assert.assertFalse(agenteVirtual.verificarDisponibilidadLibro(1, 1));
-        //Assert.assertTrue(agenteVirtual.vincularEstudianteOferta(1, 1));
+        //Assert.assertTrue(agenteVirtual.vincularEstudianteOferta(2, 1));
 
+        //Assert.assertTrue(agenteVirtual.agregarLibro(1, 1, 312));
 
     }
     

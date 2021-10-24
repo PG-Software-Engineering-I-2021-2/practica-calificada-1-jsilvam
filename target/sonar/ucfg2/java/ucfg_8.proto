@@ -1,32 +1,0 @@
-
-Wapp.AgenteVirtual#verificarDisponibilidadLibro(Ljava/lang/Integer;Ljava/lang/Integer;)Ze
-[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java5 5(/"1*ø
-1e
-[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java6 6(¨
-¥
-e
-[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java6 6(
-%0java.util.Map"__id*!*
-app.AgenteVirtual"
-libros¼
-¹
-e
-[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java6 6("
-%1	app.Libro"__mapGet*
-
-%0java.util.Map*
-
-idLibrojava.lang.Integer°­
-e
-[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java6 6(D
-%2java.lang.Boolean"Iapp.Libro#verificarDisponibilidad(Ljava/lang/Integer;)Ljava/lang/Boolean;*
-
-%1	app.Libro*
-
-cantidadjava.lang.Integer2,verificarDisponibilidad(Ljava/lang/Integer;)"o
-e
-[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java6 6(E
-"":
-idLibrojava.lang.Integer:
-cantidadjava.lang.IntegerB
-app.AgenteVirtual

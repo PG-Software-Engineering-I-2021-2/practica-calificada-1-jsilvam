@@ -21,8 +21,8 @@ public class Oferta {
     }
 
     public Boolean enTemporada(String fechaActual) {
-        //TODO: validar fechas 
-<span class="nc" id="L25">        logger.info(&quot;La oferta si está en temporada...&quot;); </span>
+<span class="nc" id="L24">        String mensaje = &quot;La oferta de &quot; + getfechaFin() + &quot; a &quot; + getfechaFin() +&quot; si está en temporada para la &quot; + fechaActual;</span>
+<span class="nc" id="L25">        logger.info(mensaje); </span>
 <span class="nc" id="L26">        return true;   </span>
     }
 }

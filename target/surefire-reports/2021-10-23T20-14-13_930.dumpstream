@@ -1,0 +1,4 @@
+# Created at 2021-10-23T20:14:14.204
+Boot Manifest-JAR contains absolute paths in classpath 'D:\01_Estudios\SWEng\PC1\practica-calificada-1-jsilvam\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
