@@ -1,0 +1,69 @@
+
+Sapp.AgenteVirtual#vincularEstudianteOferta(Ljava/lang/Integer;Ljava/lang/Integer;)Ze
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java. .(+"3*€
+2e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java/0 /(5"o
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java/) /(6
+""*â
+3e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java/ /(îë
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java/ /('
+%0boolean"9app.AgenteVirtual#ofertaEnTemporada(Ljava/lang/Integer;)Z*
+app.AgenteVirtual*
+
+idOfertajava.lang.Integer2&ofertaEnTemporada(Ljava/lang/Integer;)*
+2
+1*π
+1e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java0 0(≥
+∞
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java0 0(
+%1java.util.Map"__id*,**
+app.AgenteVirtual"
+ofertasEstudiante»
+≈
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java04 0(X!
+%2java.util.function.Function"__declareFunction*&$
+"__sonar_lambda_0$app.AgenteVirtualÑÅ
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java0 0(Y
+%5java.util.HashMap"`java.util.Map#computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;*
+
+%1java.util.Map*
+
+idOfertajava.lang.Integer*#
+!
+%2java.util.function.Function2@computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)≥
+∞
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java1 1(
+%6java.util.Map"__id*,**
+app.AgenteVirtual"
+ofertasEstudiante≈
+¬
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java1 1('
+%7java.util.HashMap"__mapGet*
+
+%6java.util.Map*
+
+idOfertajava.lang.Integer’
+“
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java1 1(?
+%8java.lang.Boolean"__mapSet*
+
+%7java.util.HashMap*#
+!
+idEstudiantejava.lang.Integer*
+"""o
+e
+[D:/01_Estudios/SWEng/PC1/practica-calificada-1-jsilvam/src/main/java/app/AgenteVirtual.java2 2(
+"":!
+idEstudiantejava.lang.Integer:
+idOfertajava.lang.IntegerB
+app.AgenteVirtual

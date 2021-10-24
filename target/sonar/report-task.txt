@@ -1,0 +1,7 @@
+organization=pg-software-engineering-i-2021-2
+projectKey=pg-software-engineering-i-2021-2:pc1-jsilvam
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.24170
+dashboardUrl=https://sonarcloud.io/dashboard?id=pg-software-engineering-i-2021-2%3Apc1-jsilvam
+ceTaskId=AXyvzCK4wZ3Yf-kSW1AZ
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXyvzCK4wZ3Yf-kSW1AZ

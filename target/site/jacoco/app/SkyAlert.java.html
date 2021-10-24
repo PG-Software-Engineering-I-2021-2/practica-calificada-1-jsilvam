@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SkyAlert.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">pc1-jsilvam</a> &gt; <a href="index.source.html" class="el_package">app</a> &gt; <span class="el_source">SkyAlert.java</span></div><h1>SkyAlert.java</h1><pre class="source lang-java linenums">package app;
+
+import java.util.Map;
+import java.util.HashMap;
+
+public class SkyAlert {
+    private static SkyAlert instance;
+
+<span class="fc" id="L9">    private Map&lt;Integer, Empresa&gt; empresas = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L10">    private Map&lt;Integer, Usuario&gt; usuarios = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L11">    private Map&lt;Integer, Tarifa&gt; tarifas = new HashMap&lt;&gt;();</span>
+
+<span class="fc" id="L13">    private Map&lt;Integer, HashMap&lt;Integer, Integer&gt;&gt; tarifasEmpresas = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L14">    private Map&lt;Integer, HashMap&lt;Integer, Boolean&gt;&gt; tarifasUsuarios = new HashMap&lt;&gt;();</span>
+
+<span class="fc" id="L16">    private SkyAlert(){</span>
+
+<span class="fc" id="L18">    }</span>
+
+    public void registrarEmpresa(Integer id, String nombre, Integer estrellas){
+<span class="fc" id="L21">        empresas.put(id, new Empresa(nombre, estrellas));</span>
+<span class="fc" id="L22">    }</span>
+
+    public void registrarUsuario(Integer id, String nombre, String correo){
+<span class="fc" id="L25">        usuarios.put(id, new Usuario(nombre, correo));</span>
+<span class="fc" id="L26">    }</span>
+
+    public void registrarTarifa(Integer id, String desde, String hacia){
+<span class="fc" id="L29">        tarifas.put(id, new Tarifa(desde, hacia));</span>
+<span class="fc" id="L30">    }</span>
+
+    public boolean condicionMinima(){
+<span class="pc bpc" id="L33" title="1 of 4 branches missed.">        return usuarios.size() &lt;= 4 || empresas.size() &lt;= 2;</span>
+    }
+
+    public boolean actualizarTarifaEmpresa(Integer idTarifa, Integer idEmpresa, Integer precio){
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if(condicionMinima()) return false;</span>
+<span class="fc" id="L38">        tarifasEmpresas.computeIfAbsent(idTarifa, k -&gt; new HashMap&lt;Integer, Integer&gt;());</span>
+<span class="fc" id="L39">        tarifasEmpresas.get(idTarifa).put(idEmpresa, precio);</span>
+<span class="fc" id="L40">        var usuariosTarifa = tarifasUsuarios.get(idTarifa);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        for (Map.Entry&lt;Integer, Boolean&gt; entry : usuariosTarifa.entrySet()) {</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">            if(entry.getValue()) usuarios.get(entry.getKey()).notificar();</span>
+<span class="fc" id="L43">        }</span>
+<span class="fc" id="L44">        return true;</span>
+    }
+
+    public boolean vincularUsuarioTarifa(Integer idUsuario, Integer idTarifa){
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if(condicionMinima()) return false;</span>
+<span class="fc" id="L49">        tarifasUsuarios.computeIfAbsent(idTarifa, k -&gt; new HashMap&lt;Integer, Boolean&gt;());</span>
+<span class="fc" id="L50">        tarifasUsuarios.get(idTarifa).put(idUsuario, true);</span>
+<span class="fc" id="L51">        return true;</span>
+    }
+
+    public boolean desvincularUsuarioTarifa(Integer idUsuario, Integer idTarifa){
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if(condicionMinima()) return false;</span>
+<span class="fc" id="L56">        tarifasUsuarios.get(idTarifa).put(idUsuario, false);</span>
+<span class="fc" id="L57">        return true;</span>
+    }
+
+    public static SkyAlert getInstance() {
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        if(instance == null){</span>
+<span class="fc" id="L62">            instance = new SkyAlert();</span>
+        }
+<span class="fc" id="L64">        return instance;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
